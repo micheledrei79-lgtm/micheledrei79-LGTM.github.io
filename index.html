@@ -1,4 +1,5 @@
-<head>
+<!DOCTYPE html>
+<html lang="it"><head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-44R61YHYKL"></script>
 <script>
@@ -8,4 +9,68 @@
 
   gtag('config', 'G-44R61YHYKL');
 </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mio primo sito</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
+    header { background: #152238; color: white; padding: 50px 20px; text-align: center; }
+    nav { position: sticky; top: 0; background: #263b5e; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { color: #ffd166; }
+    section { max-width: 850px; margin: 30px auto; padding: 45px; background: white; border-radius: 12px; }
+    h2 { color: #263b5e; }
+    button { padding: 12px 20px; border: 0; border-radius: 8px; cursor: pointer; }
+    footer { background: #152238; color: white; text-align: center; padding: 30px; }
+  </style>
+</head>
+<body>
+
+<header id="inizio">
+  <h1>Benvenuto nel mio sito</h1>
+  <p>Una semplice pagina pubblicata con GitHub Pages.</p>
+</header>
+
+<nav>
+  <a href="#chi-sono">Chi sono</a>
+  <a href="#progetti">Progetti</a>
+  <a href="#contatti">Contatti</a>
+</nav>
+
+<section id="chi-sono">
+  <h2>Chi sono</h2>
+  <p>Ciao! Questa è una pagina HTML di prova.</p>
+  <p>Puoi cambiare testi, colori e immagini direttamente dal codice.</p>
+  <p>Continua a scorrere per vedere le altre sezioni.</p>
+</section>
+
+<section id="progetti">
+  <h2>I miei progetti</h2>
+  <p>Qui posso presentare i miei lavori e le mie idee.</p>
+  <a href="https://github.com" target="_blank">Visita GitHub</a><br><br>
+  <a href="https://www.wikipedia.org" target="_blank">Apri Wikipedia</a><br><br>
+  <button onclick="mostraMessaggio()">Cliccami</button>
+  <p id="messaggio"></p>
+</section>
+
+<section id="contatti">
+  <h2>Contatti</h2>
+  <p>Puoi contattarmi tramite email.</p>
+  <a href="mailto:esempio@email.com">Invia un'email</a>
+  <p><a href="#inizio">Torna in cima ↑</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Il mio primo sito</p>
+</footer>
+
+<script>
+  function mostraMessaggio() {
+    document.getElementById("messaggio").textContent =
+      "Hai premuto il pulsante. Il sito funziona!";
+  }
+</script>
+
+</body>
 </head>
